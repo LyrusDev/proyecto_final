@@ -12,7 +12,7 @@
 <!-- Header -->
 <div
   class="site-blocks-cover"
-  style="background-image: url({% static 'core/images/hero_1.jpg'%})"
+  style="background-image: url({% static 'core/images/bg_home.jpg'%})"
   data-aos="fade"
 >
   <div class="container">
@@ -20,14 +20,18 @@
       class="row align-items-start align-items-md-center justify-content-end"
     >
       <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-        <h1 class="mb-2">Encuentra Tu Estilo Perfecto</h1>
+        <h1 class="mb-2" style="color: #f8f9fa">
+          ¡Viste Tu Pasión Con Nosotros!
+        </h1>
         <div class="intro-text text-center text-md-left">
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            at iaculis quam. Integer accumsan tincidunt fringilla.
+          <p class="mb-4" style="color: #f8f9fa">
+            En FútbolManía podrás encontrar todo lo que necesites relacionado
+            con el Fútbol. Que esperas para entrar a la cancha!
           </p>
           <p>
-            <a href="#" class="btn btn-sm btn-primary">Compra Ahora</a>
+            <a href="{% url 'products' %}" class="btn btn-sm btn-primary"
+              >Compra Ahora</a
+            >
           </p>
         </div>
       </div>
@@ -48,10 +52,10 @@
           <span class="icon-truck"></span>
         </div>
         <div class="text">
-          <h2 class="text-uppercase">Free Shipping</h2>
+          <h2 class="text-uppercase">Envío Gratis</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            at iaculis quam. Integer accumsan tincidunt fringilla.
+            En tu primera compra consigue un envío totalmente gratis. Aplican
+            condiciones a ciertos lugares.
           </p>
         </div>
       </div>
@@ -64,10 +68,10 @@
           <span class="icon-refresh2"></span>
         </div>
         <div class="text">
-          <h2 class="text-uppercase">Free Returns</h2>
+          <h2 class="text-uppercase">Reembolsos Gratis</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            at iaculis quam. Integer accumsan tincidunt fringilla.
+            Si tu compra tiene un desperfecto de fábrica o no es lo que
+            esperabas, tranquilo puedes tener un reembolso.
           </p>
         </div>
       </div>
@@ -80,10 +84,10 @@
           <span class="icon-help"></span>
         </div>
         <div class="text">
-          <h2 class="text-uppercase">Customer Support</h2>
+          <h2 class="text-uppercase">Atención Al Cliente</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            at iaculis quam. Integer accumsan tincidunt fringilla.
+            Si tienes inquietudes respecto al sitio o alguna compra, háznoslo
+            saber en la sección de Contacto.
           </p>
         </div>
       </div>
@@ -100,12 +104,13 @@
         data-aos="fade"
         data-aos-delay=""
       >
-        <a class="block-2-item" href="#">
+        <a class="block-2-item" href="{% url 'products' %}">
           <figure class="image">
             <img
-              src="{% static 'core/images/women.jpg' %}"
+              src="{% static 'core/images/categoria_1.jpg' %}"
               alt=""
               class="img-fluid"
+              style="height: 520px"
             />
           </figure>
           <div class="text">
@@ -119,12 +124,13 @@
         data-aos="fade"
         data-aos-delay="100"
       >
-        <a class="block-2-item" href="#">
+        <a class="block-2-item" href="{% url 'products' %}">
           <figure class="image">
             <img
-              src="{% static 'core/images/children.jpg' %}"
+              src="{% static 'core/images/categoria_2.png' %}"
               alt=""
               class="img-fluid"
+              style="height: 520px"
             />
           </figure>
           <div class="text">
@@ -138,12 +144,13 @@
         data-aos="fade"
         data-aos-delay="200"
       >
-        <a class="block-2-item" href="#">
+        <a class="block-2-item" href="{% url 'products' %}">
           <figure class="image">
             <img
-              src="{% static 'core/images/men.jpg' %}"
+              src="{% static 'core/images/categoria_3.jpg' %}"
               alt=""
               class="img-fluid"
+              style="height: 520px"
             />
           </figure>
           <div class="text">
@@ -171,15 +178,15 @@
             <div class="block-4 text-center">
               <figure class="block-4-image">
                 <img
-                  src="{% static 'core/images/cloth_1.jpg' %}"
+                  src="{% static 'core/images/destacado_1.png' %}"
                   alt="Image placeholder"
                   class="img-fluid"
                 />
               </figure>
               <div class="block-4-text p-4">
-                <h3><a href="#">Tank Top</a></h3>
-                <p class="mb-0">Finding perfect t-shirt</p>
-                <p class="text-primary font-weight-bold">$50</p>
+                <h3><a href="#">NIKE AIR MAX ALPHA TRAINER 5</a></h3>
+                <p class="mb-0">Zapatos Fútbol Hombre</p>
+                <p class="text-primary font-weight-bold">$ 129.90</p>
               </div>
             </div>
           </div>
@@ -187,15 +194,15 @@
             <div class="block-4 text-center">
               <figure class="block-4-image">
                 <img
-                  src="{% static 'core/images/shoe_1.jpg' %}"
+                  src="{% static 'core/images/destacado_2.png' %}"
                   alt="Image placeholder"
                   class="img-fluid"
                 />
               </figure>
               <div class="block-4-text p-4">
-                <h3><a href="#">Corater</a></h3>
-                <p class="mb-0">Finding perfect products</p>
-                <p class="text-primary font-weight-bold">$50</p>
+                <h3><a href="#">ADIDAS GRAPHIC</a></h3>
+                <p class="mb-0">Tanks/Tops Entrenar Mujer</p>
+                <p class="text-primary font-weight-bold">$ 43.90</p>
               </div>
             </div>
           </div>
@@ -203,15 +210,15 @@
             <div class="block-4 text-center">
               <figure class="block-4-image">
                 <img
-                  src="{% static 'core/images/cloth_2.jpg' %}"
+                  src="{% static 'core/images/destacado_3.png' %}"
                   alt="Image placeholder"
                   class="img-fluid"
                 />
               </figure>
               <div class="block-4-text p-4">
-                <h3><a href="#">Polo Shirt</a></h3>
-                <p class="mb-0">Finding perfect products</p>
-                <p class="text-primary font-weight-bold">$50</p>
+                <h3><a href="#">ADIDAS TIRO 23 LEAGUE</a></h3>
+                <p class="mb-0">Bags Fútbol Mujer/Hombre</p>
+                <p class="text-primary font-weight-bold">$ 71.90</p>
               </div>
             </div>
           </div>
@@ -219,15 +226,15 @@
             <div class="block-4 text-center">
               <figure class="block-4-image">
                 <img
-                  src="{% static 'core/images/cloth_3.jpg' %}"
+                  src="{% static 'core/images/destacado_4.png' %}"
                   alt="Image placeholder"
                   class="img-fluid"
                 />
               </figure>
               <div class="block-4-text p-4">
-                <h3><a href="#">T-Shirt Mockup</a></h3>
-                <p class="mb-0">Finding perfect products</p>
-                <p class="text-primary font-weight-bold">$50</p>
+                <h3><a href="#">ADIDAS PREDATOR LEAGUE</a></h3>
+                <p class="mb-0">Protecciones Fútbol Hombre/Mujer</p>
+                <p class="text-primary font-weight-bold">$ 51.90</p>
               </div>
             </div>
           </div>
@@ -235,15 +242,15 @@
             <div class="block-4 text-center">
               <figure class="block-4-image">
                 <img
-                  src="{% static 'core/images/shoe_1.jpg' %}"
+                  src="{% static 'core/images/destacado_5.png' %}"
                   alt="Image placeholder"
                   class="img-fluid"
                 />
               </figure>
               <div class="block-4-text p-4">
-                <h3><a href="#">Corater</a></h3>
-                <p class="mb-0">Finding perfect products</p>
-                <p class="text-primary font-weight-bold">$50</p>
+                <h3><a href="#">ADIDAS OCEAUNZ</a></h3>
+                <p class="mb-0">Pelotas Fútbol Mujer/Hombre</p>
+                <p class="text-primary font-weight-bold">$ 35.90</p>
               </div>
             </div>
           </div>
