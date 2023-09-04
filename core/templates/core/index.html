@@ -93,10 +93,20 @@
         >
           <div class="container">
             <ul class="site-menu js-clone-nav d-none d-md-block">
-              <li><a href="{% url 'home' %}">Inicio</a></li>
-              <li><a href="{% url 'products' %}">Productos</a></li>
-              <li><a href="{% url 'about' %}">Acerca de</a></li>
-              <li><a href="{% url 'contact' %}">Contacto</a></li>
+              <li class="{% if request.path == '/' %}active{% endif %}">
+                <a href="{% url 'home' %}">Inicio</a>
+              </li>
+              <li
+                class="{% if request.path == '/products/' %}active{% endif %}"
+              >
+                <a href="{% url 'products' %}">Productos</a>
+              </li>
+              <li class="{% if request.path == '/about/' %}active{% endif %}">
+                <a href="{% url 'about' %}">Acerca de</a>
+              </li>
+              <li class="{% if request.path == '/contact/' %}active{% endif %}">
+                <a href="{% url 'contact' %}">Contacto</a>
+              </li>
             </ul>
           </div>
         </nav>
