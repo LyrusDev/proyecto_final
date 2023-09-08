@@ -1,0 +1,24 @@
+<!-- Herencia -->
+{% extends 'core/index.html' %}
+
+<!-- Título -->
+{% block title %}Servicio al Cliente{% endblock %}
+
+<!-- Cargar datos -->
+{% load static %}
+
+<!-- Contenido -->
+{% block content %}
+<div class="site-section border-bottom" data-aos="fade">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <div class="site-section-heading pt-3 mb-4">
+          <h2 class="text-black">{{page.title}}</h2>
+        </div>
+        <p>{{page.content|safe}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -117,9 +117,12 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <ul class="list-unstyled">
-                    <li><a href="#">Políticas de Envío</a></li>
-                    <li><a href="#">Terminos y Condiciones</a></li>
-                    <li><a href="#">Políticas de Privacidad</a></li>
+                    {% load pages_secundary %}
+                    {% get_list_pages as list_pages %}
+                    <!-- For -->
+                    {% for page in list_pages %}
+                    <li><a href="{% url 'pages' page.id %}">{{page.title}}</a></li>
+                    {% endfor %}
                   </ul>
                 </div>
               </div>
